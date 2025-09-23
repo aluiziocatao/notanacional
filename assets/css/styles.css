@@ -1,0 +1,339 @@
+.image-header {
+    background-color: #1061ae;
+}
+
+.nfse-hero {
+    background-image: linear-gradient(135deg, rgba(9, 85, 163, 0.95), rgba(11, 86, 164, 0.6)), url(contabilidade.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: var(--white) !important;
+    padding: 300px 0 !important;
+    text-align: center !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px){
+    .titulo-guia-migracao {
+        font-size: 30px !important;
+        margin-top: -100px !important;
+    }
+    .nfse-container h6 {
+        font-size: 15px !important;
+        margin-bottom: -300px !important;
+    }
+}
+
+.nfse-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.rb-image {
+    width: 1900px;
+    opacity: 0.3;
+    height: 500px;
+}
+
+.bg-contagem-regressiva {
+    background-color: #fdba12;
+    padding-bottom: 5px;
+}
+
+.contador {
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 5px !important;
+    gap: 4px !important;
+    flex-wrap: wrap !important;
+}
+
+.contador-item {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    padding: 3px 5px !important;
+    border-radius: 2px !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    align-items: baseline !important;
+    display: flex !important;
+    gap: 1px !important;
+}
+
+.contador-label {
+    font-size: 0.8rem !important;
+    text-transform: uppercase !important;
+    color: var(--white) !important;
+    opacity: 0.9 !important;
+    letter-spacing: 0.1px !important;
+    line-height: 1 !important;
+}
+
+.titulo-guia-migracao {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.titulo-contagem-regressiva {
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.image-nfse {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    }
+
+    .image-nfse:hover {
+        transform: scale(1.1);
+}
+
+.whats-text {
+    font-size: 18px;
+    color: black;
+    margin-left: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.item {
+    width: 150px;
+    padding-top: 20px;
+    background-color: #ECECEC;
+    margin-left: 20px;
+    height: 120px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform .5s ease;
+}
+
+.item:hover {
+    border: 1px solid;
+    border-color: #a1e1fa;
+    background-color: #a1e1fa;
+    transform: scale(1.1);
+}
+
+.item:hover p {
+    color: #1061ae;
+}
+
+.item-requerimento {
+    width: 150px;
+    padding-top: 20px;
+    background-color: #ECECEC;
+    margin-left: 20px;
+    height: 160px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-requerimento:hover {
+    border: 1px solid;
+    border-color: darkblue;
+    color: #000;
+}
+
+.item-requerimento:hover p {
+    color: #000;
+}
+
+.item-consulta-debitos {
+    width: 150px;
+    padding-top: 20px;
+    background-color: #FBCB20;
+    margin-left: 20px;
+    height: 120px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform .5s ease;
+}
+
+.item-consulta-debitos p {
+    color: #000;
+    font-weight: bold;
+}
+
+.item-consulta-debitos:hover {
+    border: 1px solid;
+    border-color: #fdba12;
+    background-color: #fdba12;
+    transform: scale(1.1);
+}
+
+.btn-accessibility {
+    background: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.high-contrast {
+    background-color: black;
+    color: #fff;
+}
+
+.high-contrast img {
+    filter: invert(1);
+}
+
+.high-contrast .faq a p,
+.high-contrast .faq p,
+.high-contrast .faq h3,
+.high-contrast .faq span,
+.high-contrast .faq,
+.high-contrast .faq-content {
+    color: #0ff;
+    background-color: #000;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    margin: 0;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-content {
+    background-color: transparent;
+    padding: 0;
+    position: relative; /* Importante para posicionar o botão dentro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px; /* Largura máxima da imagem */
+    max-height: 500px; /* Altura máxima da imagem */
+}
+
+.modal-content img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px; /* Ajusta a distância do topo da imagem */
+    right: 5px; /* Ajusta a distância da direita da imagem */
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para o botão */
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 5px;
+    border-radius: 5px; /* Arredondamento do botão */
+    line-height: 1;
+}
+
+.close-button:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: #ccc;
+}
+.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+.banner-area {
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0;
+    /* Ajuste o padding conforme necessário */
+    background-color: #f8f9fa;
+    /* Cor de fundo do banner */
+}
+
+.banner-area .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    /* Ajuste a opacidade do overlay */
+    z-index: 1;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-content.text-center {
+    text-align: center;
+}
+
+.banner-content img.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #2254c6;
+    border-color: #2254c6;
+    padding: 10px 20px;
+    border-radius: 25px;
+    /* Para efeito "circled" */
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: #ffff;
+    border-color: #2254c6;
+    color: #2254c6;
+}
+
+#refis { 
+  padding: 40px !important;
+  margin-bottom: -40px !important;
+  font-size: medium !important;
+}
