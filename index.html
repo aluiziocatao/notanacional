@@ -66,9 +66,9 @@
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="d-flex align-items-center">      
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/logoPref.png" alt="Brasão do Portal" class="img-fluid full-width" width="200px">
+          <img src="assets/img/logoPref.png" alt="Brasão do Portal" class="img-fluid full-width no-invert" width="200px">
         </a>
-        <nav id="navmenu" class="navmenu">
+        <nav id="navmenu" class="navmenu" role="navigation" aria-label="Menu principal">
           <ul>
             <li><a href="#" class="active">Início</a></li>
             <li><a href="https://www.riobranco.ac.gov.br" target="_blank">Prefeitura</a></li>
@@ -77,14 +77,14 @@
             <li><a href="https://transparencia.riobranco.ac.gov.br/" target="_blank">Portal da Transparência</a></li>
             <li><a href="http://portalcgm.riobranco.ac.gov.br/lai/" target="_blank">Acesso a Informação</a></li>
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-hidden="true"></i>
         </nav>
       </div>
     </div>
   </header>
 <!--FIM DO HEADER-->
   <main class="main">
-    <div class=" nfse-hero">
+    <div class="nfse-hero">
       <div class="nfse-container">
         <div class="col-md-12 position-absolute top-50 start-50 translate-middle text-white mt-5">          
           <h1 class="titulo-guia-migracao text-white pt-5">Guia de Migração para NFS-e Nacional em<br> Rio Branco</h1>
@@ -94,21 +94,21 @@
       </div>  
     </div>
     <div class="col-md-12 text-center mb-4 bg-contagem-regressiva">
-        <h6 class="titulo-contagem-regressiva text-white">Contagem Regressiva para a Primeira Etapa!</h6>
-        <div class="contador" id="countdown">
-          <div class="contador-item">
-            <span id="days"></span>
-            <span class="contador-label">Dias</span> 
-          </div>
-          <div class="contador-item">
-            <span id="hours"></span>
-            <span class="contador-label">Horas</span> 
-          </div>
-          <div class="contador-item">
-            <span id="minutes"></span><span class="contador-label">Minutos</span>
-          </div>
+      <h6 class="titulo-contagem-regressiva text-white">Contagem Regressiva para a Primeira Etapa!</h6>
+      <div class="contador" id="countdown">
+        <div class="contador-item">
+          <span id="days"></span>
+          <span class="contador-label">Dias</span> 
         </div>
-      </div>        
+        <div class="contador-item">
+          <span id="hours"></span>
+          <span class="contador-label">Horas</span> 
+        </div>
+        <div class="contador-item">
+          <span id="minutes"></span><span class="contador-label">Minutos</span>
+        </div>
+      </div>
+    </div>        
     <!-- O QUE DE FATO ESTÁ MUDANDO -->
     <div class="container">      
       <div class="row py-5">
@@ -128,7 +128,7 @@
       </div>
     </div>
     <!-- FIM O QUE DE FATO ESTÁ MUDANDO -->  
-     <HR>
+     <hr>
     <!-- INICIO CRONOGRAMA DE MIGRAÇÃO -->
     <section>
       <div class="container">
@@ -141,13 +141,13 @@
             imprevistos.
           </p>
         </div>
-        <div>
+        <div class="row py-5">
           <ul class="timeline">
-              <li class="timeline-li" style="--accent-color:#29b0e6">
+                <li class="timeline-li" style="--accent-color:#29b0e6;">
                   <div class="date">Sociedades Uniprofissionais</div>
                   <div class="title">Data de Ingresso: 01/10/2025</div>
                   <div class="descr"><strong>A quem se aplica:</strong> Médicos, Advogados, Engenheiros, Contadores e demais profissionais aptos a emissão de documentos fiscais.</div>
-              </li>
+                </li>
               <li class="timeline-li" style="--accent-color:#fdba12">
                   <div class="date">Optantes do Simples Nacional</div>
                   <div class="title">Data de Ingresso: 01/11/2025</div>
