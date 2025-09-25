@@ -28,11 +28,28 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/styles.css" rel="stylesheet">
   <link href="assets/css/timeline.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/acessibilidade.css">
   <!-- =======================================================
   * Template Name: PMRBO
   ======================================================== -->
 </head>
 <body class="index-page"> <!-- Inicio do corpo da página -->
+  <!-- Botão flutuante -->
+  <button id="acessibilidade-btn" aria-label="Abrir menu de acessibilidade">A</button>
+  <!-- Fim do Botão Flutuante -->
+  <!-- Menu -->
+  <div id="acessibilidade-menu" role="dialog" aria-label="Menu de acessibilidade">
+    <button data-action="aumentarFonte">Aumentar fonte</button>
+    <button data-action="diminuirFonte">Diminuir fonte</button>
+    <button data-action="aumentarEspacamento">Aumentar espaçamento</button>
+    <button data-action="diminuirEspacamento">Diminuir espaçamento</button>
+    <button data-action="toggleAltoContraste">Alto contraste</button>
+    <button data-action="toggleTonsCinza">Escala de cinza</button>
+    <button data-action="toggleLinksSublinhados">Sublinhar links</button>
+    <button data-action="toggleCursorGrande">Cursor grande</button>
+    <button data-action="resetar">Redefinir</button>
+  </div>
+  <!-- Fim do Menu  -->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
@@ -115,7 +132,7 @@
       <div class="row py-5">
         <div class="col-md-6 d-flex flex-column justify-content-center text-primary">
           <h3>O que, de fato, está mudando?</h3>
-          <p class="whats-text">A emissão da Nota Fiscal de Serviços Eletrônica - NFS-e em Curitiba deixará de ser realizada por meio do emissor próprio, 
+          <p class="whats-text">A emissão da Nota Fiscal de Serviços Eletrônica - NFS-e em Rio Branco deixará de ser realizada por meio do emissor próprio, 
             passando a ser emitida no <strong>Emissor Nacional de NFS-e.</strong></p>
           <p class="whats-text">Esta mudança é de caráter <strong>obrigatório</strong> e objetiva trazer simplificação, padronização e redução de custos de conformidade e 
             aderência à Reforma Tributária.</p>
@@ -368,42 +385,9 @@
   
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <!-- Acessibilidade -->
-  <script>
-    let currentFontSize = 14;
-
-    function increaseFontSize() {
-        currentFontSize += 2;
-        applyFontSize();
-    }
-
-    function decreaseFontSize() {
-        currentFontSize -= 2;
-        applyFontSize();
-    }
-
-    function resetFontSize() {
-        currentFontSize = 14;
-        applyFontSize();
-    }
-
-    function applyFontSize() {
-        document.querySelectorAll('body *').forEach(element => {
-            element.style.fontSize = currentFontSize + 'px';
-        });
-    }
-
-    function toggleContrast() {
-      const highContrastClass = 'high-contrast';
-      if (document.body.classList.contains(highContrastClass)) {
-        document.body.classList.remove(highContrastClass);
-      } else {
-        document.body.classList.add(highContrastClass);
-      }
-    }
-  </script>
-
+  <!-- Accessibility.js -->
+  <script src="assets/js/acessibilidade.js"></script>
+  
 </body>
 
 </html>
