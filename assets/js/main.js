@@ -210,7 +210,7 @@
 })();
 
 // CONTADOR REGRESSIVO
-const targetDate = new Date("2025-09-30T23:59:59").getTime();
+const targetDate = new Date("2025-12-31T23:59:59").getTime();
 
 function updateCountdown() {
   const now = new Date().getTime();
